@@ -269,13 +269,13 @@ function initParticles() {
             const y = Math.random() * 100;
             
             // Random size
-            const size = Math.random() * 3 + 1;
+            const size = Math.random() * 5 + 2; // Bigger particles: 2-7px instead of 1-4px
             
             // Random animation duration
-            const duration = Math.random() * 20 + 10;
+            const duration = Math.random() * 15 + 8; // Faster: 8-23s instead of 10-30s
             
             // Random delay
-            const delay = Math.random() * 20;
+            const delay = Math.random() * 8; // Start earlier: 0-8s instead of 0-20s
             
             particle.style.cssText = `
                 position: absolute;

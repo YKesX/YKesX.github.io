@@ -32,9 +32,9 @@ function createAdvancedParticles(container) {
         // Random properties
         const x = Math.random() * 100;
         const y = Math.random() * 100;
-        const size = Math.random() * 4 + 2;
-        const duration = Math.random() * 15 + 10;
-        const delay = Math.random() * 10;
+        const size = Math.random() * 6 + 4; // Bigger particles: 4-10px instead of 2-6px
+        const duration = Math.random() * 12 + 8; // Slightly faster: 8-20s instead of 10-25s
+        const delay = Math.random() * 5; // Start earlier: 0-5s instead of 0-10s
         const opacity = Math.random() * 0.5 + 0.2;
         
         // Random color from our Web3 palette
