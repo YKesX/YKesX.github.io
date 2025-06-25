@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yağızhan Keskin's Projects - EEG, EMG, AI, Web3, and Embedded Systems">
+    <meta name="keywords" content="EEG, EMG, AI Projects, Web3, Prosthetics, Neural Signals">
+    <meta name="author" content="Yağızhan Keskin">
+    <title>Projects - Yağızhan Keskin</title>
+    
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">YK</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <div class="page-header">
+            <div class="particles-container" id="particlesContainer"></div>
+            <h1 class="page-title">Projects</h1>
+            <p class="page-subtitle">Exploring the intersection of AI, neural signals, and embedded systems</p>
+        </div>
+
+        <section class="projects-grid">
+            <!-- Project 1: EEG Emotion Recognition -->
+            <article class="project-card glass-card">
+                <div class="project-header">
+                    <h3 class="project-title">EEG Emotion Recognition with DREAMER Dataset</h3>
+                    <div class="project-tags">
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">EEG</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Signal Processing</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p>This project was a group effort with my professor, in order to create the most optimized DL/ML model for recognizing emotions using the DREAMER dataset. We have used PyTorch, TensorFlow and etc. alongside many signal processing techniques.</p>
+                    <div class="project-highlights">
+                        <span>🧠 Neural Signal Analysis</span>
+                        <span>📊 Emotion Classification</span>
+                        <span>🔬 Research Collaboration</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <div class="project-status status-completed">Completed</div>
+                    <button class="project-link btn-ghost">Learn More</button>
+                </div>
+            </article>
+
+            <!-- Project 2: EMG Metamask Wallet -->
+            <article class="project-card glass-card">
+                <div class="project-header">
+                    <h3 class="project-title">EMG-based Metamask Wallet Unlocker</h3>
+                    <div class="project-tags">
+                        <span class="tag">EMG</span>
+                        <span class="tag">ESP32</span>
+                        <span class="tag">AD8232</span>
+                        <span class="tag">Web3</span>
+                        <span class="tag">Blockchain</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p>This project was a collaborative effort on creating a wallet that worked by using your body, for the Stellar Hack Pera Hackathon. Using muscle signals to securely unlock cryptocurrency wallets.</p>
+                    <div class="project-highlights">
+                        <span>💪 Biometric Security</span>
+                        <span>🔐 Crypto Wallet Integration</span>
+                        <span>🏆 Hackathon Project</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <div class="project-status status-completed">Completed</div>
+                    <button class="project-link btn-ghost">View Demo</button>
+                </div>
+            </article>
+
+            <!-- Project 3: EEG Prosthetic Arm -->
+            <article class="project-card glass-card featured">
+                <div class="project-header">
+                    <h3 class="project-title">EEG-Controlled Prosthetic Arm</h3>
+                    <div class="project-tags">
+                        <span class="tag">EEG</span>
+                        <span class="tag">Prosthetics</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Real-time</span>
+                        <span class="tag">BCI</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p>Using my proprietary EEG analysing AI models, me and my team are currently working hard to create new prosthetics that can replace a limb fully. This cutting-edge brain-computer interface project aims to revolutionize prosthetic control.</p>
+                    <div class="project-highlights">
+                        <span>🦾 Neural Control</span>
+                        <span>🤖 AI-Powered</span>
+                        <span>⚡ Real-time Processing</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <div class="project-status status-in-progress">In Progress</div>
+                    <button class="project-link btn-ghost">Follow Progress</button>
+                </div>
+            </article>
+
+            <!-- Project 4: BTCV Colon Tumor Analysis -->
+            <article class="project-card glass-card">
+                <div class="project-header">
+                    <h3 class="project-title">BTCV Colon Tumor Analysis AI</h3>
+                    <div class="project-tags">
+                        <span class="tag">3D CNN</span>
+                        <span class="tag">Medical AI</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Healthcare</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p>Using 3D CNN's and their variations, creating an AI model to locate tumors for (possible) colon cancer patients, using the BTCV dataset. This project aims to assist medical professionals in early detection.</p>
+                    <div class="project-highlights">
+                        <span>🏥 Medical AI</span>
+                        <span>🔍 Tumor Detection</span>
+                        <span>📈 3D Analysis</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <div class="project-status status-in-progress">Repo Unfinished</div>
+                    <button class="project-link btn-ghost">View Code</button>
+                </div>
+            </article>
+
+            <!-- Project 5: More Projects -->
+            <article class="project-card glass-card more-projects">
+                <div class="project-header">
+                    <h3 class="project-title">And Many More...</h3>
+                    <div class="project-tags">
+                        <span class="tag">Image Recognition</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Web3</span>
+                        <span class="tag">Embedded Systems</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p>There are many projects I have done with my team at my robotics club, by myself out of boredom or just to have fun with friends. Many of these projects used Image Recognition, AI, Web3, Embedded Systems, Power systems, Mechanical Design and much more...</p>
+                    <div class="project-highlights">
+                        <span>🤖 Robotics Club</span>
+                        <span>⚡ Power Systems</span>
+                        <span>🔧 Mechanical Design</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <div class="project-status status-ongoing">Ongoing</div>
+                    <a href="contact.html" class="project-link btn-ghost">Get in Touch</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="glass-card cta-card">
+                <h2>Interested in Collaboration?</h2>
+                <p>I'm always open to discussing new projects, research opportunities, and innovative ideas in the fields of AI, embedded systems, and biomedical engineering.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Me</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More About Me</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Yağızhan Keskin. Building the future of human-machine interaction.</p>
+            <div class="footer-links">
+                <a href="https://github.com/YKesX" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/ya%C4%9F%C4%B1zhan-keskin-001401273/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:yagizhankeskin91@protonmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html> 
