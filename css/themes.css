@@ -14,9 +14,9 @@
   --color-border-light: #3f3f46;
   
   /* Glass Effects - Dark Mode */
-  --glass-bg: rgba(0, 0, 0, 0.4);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  --glass-bg: rgba(0, 0, 0, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
   
   /* Web3 Colors - Dark Mode Variants */
   --color-primary: #60a5fa;
@@ -27,17 +27,17 @@
   --color-accent-hover: #10b981;
   
   /* Gradient Orbs - Dark Mode */
-  --orb-gradient-1: linear-gradient(135deg, rgba(96, 165, 250, 0.2), rgba(192, 132, 252, 0.2));
-  --orb-gradient-2: linear-gradient(135deg, rgba(192, 132, 252, 0.15), rgba(52, 211, 153, 0.15));
-  --orb-gradient-3: linear-gradient(135deg, rgba(52, 211, 153, 0.2), rgba(96, 165, 250, 0.2));
+  --orb-gradient-1: linear-gradient(135deg, rgba(96, 165, 250, 0.15), rgba(192, 132, 252, 0.15));
+  --orb-gradient-2: linear-gradient(135deg, rgba(192, 132, 252, 0.1), rgba(52, 211, 153, 0.1));
+  --orb-gradient-3: linear-gradient(135deg, rgba(52, 211, 153, 0.15), rgba(96, 165, 250, 0.15));
 }
 
 /* Light Theme Variables (Default) */
 :root {
   /* Light theme variables are already defined in main.css */
-  --orb-gradient-1: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15));
-  --orb-gradient-2: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(16, 185, 129, 0.1));
-  --orb-gradient-3: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.15));
+  --orb-gradient-1: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+  --orb-gradient-2: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(16, 185, 129, 0.08));
+  --orb-gradient-3: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1));
 }
 
 /* ================================================
@@ -261,11 +261,6 @@ body {
   gap: var(--spacing-lg);
 }
 
-.fact-icon {
-  font-size: var(--font-size-2xl);
-  flex-shrink: 0;
-}
-
 .fact-content h3 {
   color: var(--color-text-primary);
   margin-bottom: var(--spacing-sm);
@@ -389,11 +384,6 @@ body {
   gap: var(--spacing-lg);
 }
 
-.highlight-icon {
-  font-size: var(--font-size-2xl);
-  flex-shrink: 0;
-}
-
 .highlight-text h3 {
   color: var(--color-text-primary);
   margin-bottom: var(--spacing-sm);
@@ -412,11 +402,6 @@ body {
 
 .contact-card:hover {
   transform: translateY(-5px);
-}
-
-.contact-icon {
-  font-size: var(--font-size-4xl);
-  margin-bottom: var(--spacing-lg);
 }
 
 .contact-card h3 {
@@ -476,12 +461,6 @@ body {
 .interest-item:hover {
   background: rgba(59, 130, 246, 0.1);
   transform: translateY(-3px);
-}
-
-.interest-icon {
-  font-size: var(--font-size-2xl);
-  margin-bottom: var(--spacing-md);
-  display: block;
 }
 
 .interest-item h3 {

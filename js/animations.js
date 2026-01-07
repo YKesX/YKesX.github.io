@@ -23,7 +23,7 @@ function initParticleSystem() {
 }
 
 function createAdvancedParticles(container) {
-    const particleCount = 30;
+    const particleCount = 20;
     
     for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
@@ -32,17 +32,17 @@ function createAdvancedParticles(container) {
         // Random properties
         const x = Math.random() * 100;
         const y = Math.random() * 100;
-        const size = Math.random() * 6 + 4; // Bigger particles: 4-10px instead of 2-6px
-        const duration = Math.random() * 12 + 8; // Slightly faster: 8-20s instead of 10-25s
-        const delay = Math.random() * 5; // Start earlier: 0-5s instead of 0-10s
-        const opacity = Math.random() * 0.5 + 0.2;
+        const size = Math.random() * 4 + 2;
+        const duration = Math.random() * 20 + 15;
+        const delay = Math.random() * 8;
+        const opacity = Math.random() * 0.3 + 0.1;
         
         // Random color from our Web3 palette
         const colors = [
-            'rgba(59, 130, 246, 0.6)',   // Blue
-            'rgba(139, 92, 246, 0.6)',   // Purple
-            'rgba(16, 185, 129, 0.6)',   // Green
-            'rgba(245, 158, 11, 0.6)'    // Amber
+            'rgba(59, 130, 246, 0.4)',
+            'rgba(139, 92, 246, 0.4)',
+            'rgba(16, 185, 129, 0.4)',
+            'rgba(245, 158, 11, 0.4)'
         ];
         const color = colors[Math.floor(Math.random() * colors.length)];
         

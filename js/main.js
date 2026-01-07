@@ -22,8 +22,8 @@ function initThemeToggle() {
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = themeToggle.querySelector('.theme-icon');
     
-    // Get saved theme or default to light
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    // Get saved theme or default to dark
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     setTheme(savedTheme);
     
     // Theme toggle click handler
@@ -43,8 +43,8 @@ function initThemeToggle() {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
         
-        // Update icon
-        themeIcon.textContent = theme === 'light' ? '🌙' : '☀️';
+        // Update toggle indicator (circle moves left for light, right for dark)
+        themeToggle.setAttribute('data-theme', theme);
         
         // Update meta theme-color for mobile browsers
         const metaThemeColor = document.querySelector('meta[name="theme-color"]');
@@ -258,7 +258,7 @@ function initParticles() {
     });
     
     function createParticles(container) {
-        const particleCount = 50;
+        const particleCount = 30;
         
         for (let i = 0; i < particleCount; i++) {
             const particle = document.createElement('div');
@@ -269,13 +269,13 @@ function initParticles() {
             const y = Math.random() * 100;
             
             // Random size
-            const size = Math.random() * 5 + 2; // Bigger particles: 2-7px instead of 1-4px
+            const size = Math.random() * 3 + 1;
             
             // Random animation duration
-            const duration = Math.random() * 15 + 8; // Faster: 8-23s instead of 10-30s
+            const duration = Math.random() * 20 + 15;
             
             // Random delay
-            const delay = Math.random() * 8; // Start earlier: 0-8s instead of 0-20s
+            const delay = Math.random() * 10;
             
             particle.style.cssText = `
                 position: absolute;
@@ -283,12 +283,12 @@ function initParticles() {
                 top: ${y}%;
                 width: ${size}px;
                 height: ${size}px;
-                background: radial-gradient(circle, rgba(59, 130, 246, 0.6), transparent);
+                background: radial-gradient(circle, rgba(59, 130, 246, 0.4), transparent);
                 border-radius: 50%;
                 pointer-events: none;
                 animation: particleFloat ${duration}s linear infinite;
                 animation-delay: ${delay}s;
-                opacity: 0.7;
+                opacity: 0.5;
             `;
             
             container.appendChild(particle);
