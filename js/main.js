@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
    ================================================ */
 function initThemeToggle() {
     const themeToggle = document.getElementById('themeToggle');
-    const themeIcon = themeToggle.querySelector('.theme-icon');
     
     // Get saved theme or default to dark
     const savedTheme = localStorage.getItem('theme') || 'dark';
